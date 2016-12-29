@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -16,28 +16,29 @@
 
 	<header>
 		<div class="row">
-			<div class="fondo">
-				<div class="col-sm-12 col-xs-12  menu">
+				<div class="col-sm-12 col-xs-12 menu">
 					<!--<div class="col-sm-12 col-xs-12">-->
 					<a href="index.html"><div class=" col-sm- 3col-xs-3 text-center btn-primary btn1">HOME</div></a>
-					<a href="perfil.html"><div class=" col-sm-3 col-xs-3 text-center btn-primary btn2">Sobre Mi</div></a>
-					<a href="trabajos.html"><div class=" col-sm-3 col-xs-3 text-center btn-primary btn3">Trabajos</div></a>
-					<a href="contacto.html"><div class=" col-sm-3 col-xs-3 text-center btn-primary btn4">Contacto</div></a>
-					<a href="estudios.html"><div class=" col-sm-3 col-xs-3 text-center btn-primary btn5">Estudios</div></a>
+					<a href="#sobre-mi"><div class=" col-sm-3 col-xs-3 text-center btn-primary btn-menu">Sobre Mi</div></a>
+					<a href="#trabajos"><div class=" col-sm-3 col-xs-3 text-center btn-primary btn-menu">Trabajos</div></a>
+					<a href="#conocimientos"><div class=" col-sm-3 col-xs-3 text-center btn-primary btn-menu">Conocimientos</div></a>
+					<a href="#contacto"><div class=" col-sm-3 col-xs-3 text-center btn-primary btn-menu">Contacto</div></a>
 				</div>
-			</div>	
 		</div>
 	</header>
-	<section>
-		<div class="yo">
-			<h1>Marianella Fabrega</h1>
-			<a href="perfil.html"><button class=" col-xs-3 text-center btn-primary  btn-enter btn5">Continuar</button></a>
+	<section id="banner">
+		<div class="banner">
+			<img src="img/banner-img.png" class="img-responsive">
 		</div>
+		<div class="yo animated fadeInDown">
+			<h1>Marianella Fabrega</h1>
+			<!--<a href="perfil.html"><button class=" col-xs-3 text-center btn-primary  btn-enter btn5">Continuar</button></a>-->
+			<span class="glyphicon glyphicon-chevron-down"></span>
+		</div>
+		
 	</section>
-
-	</body>
-</html>
-	<section>
+	<section id="sobre-mi">
+		<img src="img/titulo-seccion.png" class="img-responsive titulo-seccion">
 		<div class="row">
 			<div class="col-sm-6 col-xs-6">
 				<div class="perfil">
@@ -49,95 +50,103 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sunt totam porro fugit commodi, perspiciatis fuga tenetur ullam explicabo nam, omnis illo. Ipsa pariatur error omnis voluptatum. Excepturi ad, perferendis!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure corporis voluptatibus voluptatum nemo veritatis excepturi, error vero maxime aliquid odit placeat, quis natus, est debitis esse sequi ab architecto? Nulla.</p>
 			</div>
-		</div>
+		</div><!--sobre mi-->
 		
 	</section>
-	<section>
- <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-3 col-xs-3 post img1">
-        <a href="#" class="cajanegra">
-          <p class="titulo-box">Mini</p>
-          <p class="descripcion">lorem ipsum </p>
-        </a>
-      </div>
-      <div class="col-sm-3 col-xs-3 post img2 ">
-        <a href="#" class="cajanegra">
-          <p class="titulo-box">Mini</p>
-          <p class="descripcion">lorem ipsum </p>
-        </a>
-      </div>
-      <div class="col-sm-3 col-xs-3 post img3">
-        <a href="#" class="cajanegra">
-          <p class="titulo-box">Mini</p>
-          <p class="descripcion">lorem ipsum </p>
-        </a>
-      </div>
-      <div class="col-sm-3 col-xs-3 post img5">
-        <a href="#" class="cajanegra">
-          <p class="titulo-box">Mini</p>
-          <p class="descripcion">lorem ipsum </p>
-        </a>
-      </div>
-    </div>
-  </div>
+<section id="trabajos">
+	<img src="img/titulo-seccion-blanco.png" class="img-responsive titulo-seccion">
+	<h1>Trabajos</h1>
+	<div class="row">
+		<div class="primera-caja col-sm-2 contenedor-img trabajos-efecto">  
+     		<img src="img/creamy.png" />  
+     		<div class="mascara">
+         	<h2>Creamy Theme</h2>  
+         	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
+         	<a href="#" class="link">Ver sitio</a>  
+    	 </div>
+		</div>
+		<div class="col-sm-offset-1 col-sm-2 contenedor-img trabajos-efecto">  
+     		<img src="img/comunidad.png" />  
+     		<div class="mascara">
+         	<h2>Comunidad Sostenible</h2>  
+         	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
+         	<a href="#" class="link">Ver sitio</a>  
+    	 </div>
+		</div>
+		<div class="col-sm-offset-1 col-sm-2 contenedor-img trabajos-efecto">  
+     		<img src="img/mini.png" />  
+     		<div class="mascara">
+         	<h2>Mini Theme</h2>  
+         	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
+         	<a href="#" class="link">Ver sitio</a>  
+    	 </div>
+		</div>
+		<div class="col-sm-offset-1 col-sm-2 contenedor-img trabajos-efecto">  
+     		<img src="img/bunny.png" />  
+     		<div class="mascara">
+         	<h2>Bunny Love</h2>  
+         	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada.</p>
+         	<a href="#" class="link">Ver sitio</a>  
+    	 </div>
+		</div>
+	</div>
 </section>
-	<section>
-		<div class="row prueba">
-  			<div class="col-sm-3 col-xs-3 col-xs-offset-2 ">
-        		<img src="img/html.png ">
-      		</div>
- 
-
-      		<div class="col-sm-3 col-xs-3 post fg2">
-        		<img src="img/css3.png">
-     		 </div>
-
-      		<div class="col-sm-3 col-xs-3 post fg3">
-        		<img src="img/js.png">
-      		</div>
-	 </div>
-  	<div class="row">
-  		<div class="col-sm-3 col-xs-3 post fg4">
-        <img src="img/bootstrap.png">
-      </div>
-
-      <div class="col-sm-3 col-xs-3 post fg5">
-        <img src="img/jquery.png">
-      </div>
-
-      <div class="col-sm-3 col-xs-3 post fg6">
-        <img src="img/git_logo.png">
-      </div>
-      <div class="row ">
-      <div class="col-sm-3 col-xs-3 post fg7">
-        <img src="img/github.png">
-      </div>
-
-    </div>
- 	</div>
-</section>
-	<section text-center class="contc" >
+	<section id="conocimientos">
+		<img src="img/titulo-seccion.png" class="img-responsive titulo-seccion">
+		<h1>Conocimientos</h1>
+		<div class="row">
+  			<div class="col-sm-6 iconos">
+  				<div class="row">
+  					<div class="col-sm-offset-1 col-sm-3">
+  						<img src="img/html.png" class="img-responsive">
+  					</div>
+  					<div class="col-sm-3">
+  						<img src="img/css3.png" class="img-responsive">
+  					</div>
+  					<div class="col-sm-3">
+  						<img src="img/bootstrap.png" class="img-responsive">
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm-3">
+  						<img src="img/github.png" class="img-responsive">
+  					</div>
+  					<div class="col-sm-3">
+  						<img src="img/jquery.png" class="img-responsive">
+  					</div>
+  					<div class="col-sm-3">
+  						<img src="img/js.png" class="img-responsive">
+  					</div>
+  					<div class="col-sm-3">
+  						<img src="img/git_logo.png" class="img-responsive">
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-sm-6">
+  				<img src="img/conocimiento.png" class="img-responsive conocimiento">
+  			</div>
+ 		</div>
+	</section>
+	<section id="contacto">
+		<img src="img/titulo-seccion-blanco.png" class="img-responsive titulo-seccion">
 		<h1>Redes Sociales</h1>
 		<div class="row">
-			<div class="col-sm-6 col-xs-6">
-				<img src="img/ninos2.jpg" class="foto">
-			</div>
-			<div class="col-sm-6 col-xs-6 redes">
-				<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Marianellafbrg@gmail.com</a>
+			<div class="col-sm-4 col-xs-4 redes">
+				<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>marianellafbrg@gmail.com</a>
 
 			</div>
-			<div class="col-sm-3 col-xs-3 redes">
+			<div class="col-sm-4 col-xs-4 redes">
 				<a href="https://www.github.com/marianellaf"><i class="fa fa-github" aria-hidden="true"></i>Marianellaf</a>
 			</div>
 
-			<div class="col-sm-6 col-xs-6 redes">
+			<div class="col-sm-4 col-xs-4 redes">
 				<a href="https://www.twitter.com/search?f=tweets&q=mannefbrg"><i class="fa fa-twitter" aria-hidden="true"></i>mannefbrg</a>	
 			</div>
 			
 		</div>	
-		
 	</section>
-
+	<section id="end">
+		<h6>-Sic Parvis Magna-</h6>
+	</section>
 </body>
 </html>
